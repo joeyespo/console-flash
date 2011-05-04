@@ -15,3 +15,11 @@ Options
     /d <decimal>        The number of seconds to wait before flashing (default: zero)
     /r <decimal>        The flash rate in seconds, with zero indicating use the system default (default: zero)
     /?, /h              Shows this help message
+
+
+Screenshots
+-----------
+
+![Console Flash: Screenshot 1](http://s3.amazonaws.com/scrnshots.com/screenshots/287362/console_flash_taskbar_screenshotpng)
+
+An example of the console window flashing.
