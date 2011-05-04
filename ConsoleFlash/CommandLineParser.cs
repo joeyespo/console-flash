@@ -22,7 +22,7 @@ namespace ConsoleFlash
             int intValue;
             decimal decimalValue;
 
-            count = 0;
+            count = 3;
             delay = 0m;
             rate = 0m;
             exit = false;
@@ -109,9 +109,9 @@ namespace ConsoleFlash
             Console.WriteLine("  flash [options]");
             Console.WriteLine();
             Console.WriteLine("options:");
-            Console.WriteLine("  /c <integer>         The number of times to flash the window before keeping it inverted (default: 3)");
-            Console.WriteLine("  /d <decimal>         The number of seconds to wait before flashing (default: zero)");
-            Console.WriteLine("  /r <decimal>         The flash rate in seconds, with zero indicating use the system default (default: zero)");
+            Console.WriteLine("  /d decimal           The number of seconds to wait before beginning to flash (default: 0)");
+            Console.WriteLine("  /c integer           The number of times to flash the window before keeping it inverted, with zero indicating do not stop (default: 3)");
+            Console.WriteLine("  /r decimal           The flash rate in seconds, with zero indicating use the system default (default: 0)");
             Console.WriteLine("  /h, /?               Shows this help message");
         }
     }
