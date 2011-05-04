@@ -21,7 +21,7 @@ Usage
 
 **Options**
 
-    /c <integer>        The number of times to flash the window before keeping it inverted (default: 3)
-    /d <decimal>        The number of seconds to wait before flashing (default: zero)
-    /r <decimal>        The flash rate in seconds, with zero indicating use the system default (default: zero)
+    /d decimal          The number of seconds to wait before beginning to flash (default: 0)
+    /c integer          The number of times to flash the window before keeping it inverted, with zero indicating do not stop (default: 3)
+    /r decimal          The flash rate in seconds, with zero indicating use the system default (default: 0)
     /?, /h              Shows this help message
