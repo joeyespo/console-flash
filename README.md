@@ -2,15 +2,32 @@ ConsoleFlash
 ============
 
 A simple Windows command-line app to flash the console window, letting you know
-when a script finishes. A common place to use this at the end of a batch file.
+when a script finishes.
+
+![Screenshot](Screenshots/Screenshot.png)
 
 
-Screenshots
------------
+Examples
+--------
 
-![Console Flash: Screenshot 1](http://s3.amazonaws.com/scrnshots.com/screenshots/287362/console_flash_taskbar_screenshotpng)
+Test it out in the command line:
 
-An example of the console window flashing.
+```bat
+> sleep 3s && flash
+```
+
+A more practical place is at the end of a lengthy `.bat` file where you'd like to
+see the output when it finishes:
+
+```bat
+@ECHO OFF
+
+initial-setup-code
+some-really-long-executable
+
+flash
+pause
+```
 
 
 Usage
@@ -18,8 +35,7 @@ Usage
 
     flash [options]
 
-
-**Options**
+#### Options
 
     /d decimal          The number of seconds to wait before beginning to flash (default: 0)
     /c integer          The number of times to flash the window before keeping it inverted, with zero indicating do not stop (default: 3)
